@@ -55,66 +55,74 @@
 print("plz create HP of monster ")
 HPmonster = int(input("HP : "))
 print ("plz create 3 power of atttools")
-powerof_att1 = int(input("Power att of" , 1 ,"atttools : "))
-powerof_att2 = int(input("Power att of" , 2 ,"atttools : "))
-powerof_att3 = int(input("Power att of" , 3 ,"atttools : "))
+powerof_att1 = int(input("Power att of 1 atttools : "))
+powerof_att2 = int(input("Power att of 2 atttools : "))
+powerof_att3 = int(input("Power att of 3 atttools : "))
 
-# askforway = 0 
-# while askforway 
-# เดuJยวต้องสร้าง while loop 
+
 
 while int(input("fight what do you want to do fight (1) of exit(2) ")) != 2:
-   
-        Round = int(input("input round do you want to fight"))
     
+        Round = int(input("input round do you want to fight"))
+
         for i in range (Round):
 
-            print("input atttools for round ",i )
+            print("input atttools for round ",i+1 )
 
-            input(" : ")
-            if input == 1 :
+            choseWep = int(input(" : "))
+            if choseWep == 1 :
+                    HPmonster = HPmonster-powerof_att1
+                    print ("you hit monster :" , powerof_att1 , "now monster HP " , HPmonster  )
+                    if HPmonster == 0 :
+                        print("monster die")
+                        breakpoint
+                    elif HPmonster < 0  :
+                        print ("monter have Hp 20")
+                        HPmonster == 20
+                    elif 0 < HPmonster:
+                        print("fihght next round")
+                    else:
+                        print("no")          
 
-                print("you hit monster :" , powerof_att1 , "now monster HP " ,HPmonster-powerof_att1 )
-                if HPmonster == 0 :
-                    print("monster die")
-                elif HPmonster <0  :
-                    print ("monter have Hp 20")
-                    HPmonster == 20
-                
-                elif 0 < HPmonster > HPmonster:
-                     print("fihght next round")
+            elif choseWep == 2 :
+                    HPmonster = HPmonster-powerof_att2
+                    print ("you hit monster :" , powerof_att2 , "now monster HP " , HPmonster  )
+                    if HPmonster == 0 :
+                        print("monster die")
+                        breakpoint
 
-            elif input == 2 :
+                    elif HPmonster < 0  :
+                        print ("monter have Hp 20")
+                        HPmonster == 20
+                    elif 0 < HPmonster:
+                        print("fihght next round")
+                    else:
+                        print("no") 
 
-                print("you hit monster :" , powerof_att2 , "now monster HP " ,HPmonster-powerof_att2 )
-                if HPmonster == 0 :
-                    print("monster die")
-                elif HPmonster <0  :
-                    print ("monter have Hp 20")
-                    HPmonster == 20
-                
-                elif 0 < HPmonster > HPmonster:
-                     print("fihght next round")
-            
-            elif input == 3 :
+            elif choseWep == 3 :
+                    HPmonster = HPmonster-powerof_att3
+                    print ("you hit monster :" , powerof_att3 , "now monster HP " , HPmonster  )
+                    if HPmonster == 0 :
+                        print("monster die")
+                        # breakpoint
 
-                print("you hit monster :" , powerof_att3 , "now monster HP " ,HPmonster-powerof_att3 )
-                if HPmonster == 0 :
-                    print("monster die")
-                elif HPmonster <0  :
-                    print ("monter have Hp 20")
-                    HPmonster == 20
-                
-                elif 0 < HPmonster > HPmonster:
-                     print("fihght next round")
-
+                    elif HPmonster < 0  :
+                        print ("monter have Hp 20")
+                        HPmonster == 20
+                    elif 0 < HPmonster:
+                        print("fihght next round")
+                    else:
+                        print("no")          
             else :
-                 print("error")
+                    print("error")
 
-        # if  0<HPmonster :
+    
+       
               
 
 
-print("you exit yhe game")
+print("you exit the game")
+
+
                 
    
