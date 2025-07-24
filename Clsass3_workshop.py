@@ -117,9 +117,3 @@ while int(input("fight what do you want to do fight (1) of exit(2) ")) != 2:
 
                 if HPmonster > 0 :
                     print("you die")
-
-
-
-
-                
-   
