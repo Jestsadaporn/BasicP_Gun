@@ -35,6 +35,8 @@ def buyticket():
         if userCmoive == "Oppenheimer" :
             print ("-> you will buy ticket moive Oppenheimer ")
             print(ourmoive[0])
+            ageuser = input(("check your age plz input age >> "))
+            langofmoive = input("thai(1) or Soundtrack(2) ")
             moivesystem()
             if ageuser < "20" :
                 print("you can not watch this")
@@ -43,7 +45,10 @@ def buyticket():
                 print("----------------")
                 print(ourmoive[0]["name"], langofmoive , ourmoive[0]["prize"])
         elif userCmoive == "Dune part one " :
+            print ("-> you will buy ticket moive Dune part one")
             print(ourmoive[1])
+            ageuser = input(("check your age plz input age >> "))
+            langofmoive = input("thai(1) or Soundtrack(2) ")
             moivesystem()
             print("your ticket : ")
             print("----------------")
@@ -67,25 +72,15 @@ def buyticket():
             print("your ticket : ")
             print("----------------")
             print( ourmoive[4]["name"], langofmoive , ourmoive[4]["prize"])
-    ageuser = input(("check your age plz input age >> "))
-    langofmoive = input("thai(1) or Soundtrack(2) ")    
-    moivesystem()
-    def moivesystem():
-        if langofmoive == 1 :
-            langofmoive == "thai"
-        elif langofmoive == 2 :
-            langofmoive == "Soundtrack"
-        else :
-            print("error")
-    
-    
-
-    
-        
-
-    
-    
- 
+       
+        moivesystem()
+        def moivesystem():
+            if langofmoive == 1 :
+                langofmoive == "thai"
+            elif langofmoive == 2 :
+                langofmoive == "Soundtrack"
+            else :
+                print("error")
 # ------------------------------
 showourmoive()
 buyticket()
